@@ -156,9 +156,9 @@ def user_stats(df, city):
         mryob = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
         eyob = sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
         mcyob = df['Birth Year'].mode()[0]
-        print("The earliest year of birth is ", eyob)
-        print("The most recent year of birth is ", mryob)
-        print("The most common year of birth is ", mcyob)
+        print("The earliest year of birth is ", eyob, "\n")
+        print("The most recent year of birth is ", mryob, "\n")
+        print("The most common year of birth is ", mcyob, "\n")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
